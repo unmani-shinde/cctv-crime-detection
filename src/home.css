@@ -1,65 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: auto;
-}
-
-
 body {
     height: 100vh;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    background-image:url("C:/Users/Mohar/WebDev/homepage/src/LoginPageBackground.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     /* url("https://source.unsplash.com/JIUjvqe2ZHg"); */
     background-size: cover;
     background-position: center;
-    color: black;
-     /* text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); */
-} 
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
 .cover-container {
   max-width: 60vw;
 }
 
-nav {
-  background-color: transparent;
-  color: #fff;
-    width: 80rem;
-}
-
-#navbar {
-    margin-left: -40vh;
-    position: sticky;
-    font-size: large;
-    font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-  /* margin-right: 1rem; */
-}
-
-nav a {
-  display: block;
-  padding: 1rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-
-#px-3{
-    margin: auto;
-    margin-top: 20vh;
-    padding: 10px;
-    display: inline-block;
-}
 .nav-link {
     padding: 0.25rem 0;
     font-weight: 700;
@@ -79,7 +31,7 @@ nav a {
 
 }
 
-.btn-secondary{
-    color: mediumvioletred;
+.btn-secondary, .btn-secondary:hover{
+    color: #333;
     text-shadow: none;
 }
