@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: auto;
+        }
+
+
+        body {
+            height: 80vh;
+            background-image: url("https://dlb7plj1xl6zs.cloudfront.net/wp-content/uploads/2018/11/amanda-dalbjorn-258807-unsplash.png");
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(250, 238, 238);
+        } 
+        .cover-container {
+        max-width: 40vw;
+        }
+
+        nav {
+        background-color: transparent;
+        color: #fff;
+        width: 60rem;
+        }
+
+        #navbar {
+            margin-left: -40vh;
+            position: sticky;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        }
+
+
+        nav a {
+        display: block;
+        padding: 1rem;
+        color: #fff;
+        text-decoration: none;
+        }
+
+
+        #px-3{
+            /* margin-left: -40rem; */
+            margin-top: 1vh;
+            /* padding: 10px;
+            display: block;
+            align-items: left; */
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            text-align: left;
+            padding: 8vh;
+        }
+
+        #h1{
+        margin-left: 10vh ;
+        margin-top: 45vh;
+        height: 10rem;
+        }
+
+
+        .lead{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        align-self: flex-start;
+        height: 5rem;
+        padding: 5vh;
+        margin-top: -10vh;
+        width: 45rem;
+        }
+
+        .nav-link {
+            padding: 0.25rem 0;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            margin-left: 1rem;
+            border-bottom: 0.25rem solid transparent;
+        }
+
+        .nav-link:hover{
+            color: rgba(255,255,255,0.5);
+            border-bottom-color:rgba(255,255,255,0.5);
+        }
+
+        .nav-link.active {
+            color: white;
+            border-bottom-color:white;
+
+        }
+
+        #heading{
+        margin-top: -27vh;
+        margin-left: 0vh;
+        height: 12rem;
+        display: inline-block;
+			overflow: hidden;
+			animation: typing 3s steps(30) forwards;
+			white-space: nowrap;
+      font-size: xx-large;
+        
+        }
+       
+        #btn{
+            color:white;
+            width: 30vh;
+            text-shadow: none;
+            border-radius: 5px;
+            border-color: white;
+            margin-top: 13rem ;
+            margin-left: 15vh;
+            position: absolute;
+            align-self: center;
+            /* font-weight:bold; */
+        }
+
+        #btn:hover{
+        background-color: white;
+        color: black;
+        transition: background-color 0.4s ease-in;
+        font-weight: bold;
+        }
+
+        #hr{
+        border: 2px solid white;
+        margin: 0;
+        width: 88rem;
+        margin-left: -25rem;
+        }
+
+        a:hover{
+        box-shadow: inset 250px 0 0 0 white;
+        box-sizing:content-box;
+        color: black;
+        }
+
+        a{
+        box-shadow: inset 0 0 0 0 white;
+        color: white;
+        margin: 0 .25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+
+        @keyframes typing {
+			from {
+				width: 0;
+			}
+			to {
+				width: 100%;
+			}
+		}
+
+
+    </style>
+</head>
+<body>
+    <div class="App">
+        <div class="d-flex text-center text-white">
+          <div
+            id="Home"
+            class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
+          >
+            <div id="navbar" class="navbar">
+              <nav>
+                <div id="grp">
+                  <ul>
+                    <li>
+                      <a class="bar" href="#">
+                        Name: Suraksha
+                      </a>
+                    </li>
+                    <li>
+                      <a class="bar" href="#">
+                        Staff ID: 123
+                      </a>
+                    </li>
+                    <li>
+                      <a class="bar" href="#">
+                        Crime Branch: Mumbai
+                      </a>
+                    </li>
+                    <li>
+                      <a class="bar" href="#">
+                        Location: Vile Parle
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <hr id="hr"></hr>
+            <div id="px-3">
+              <h1 id="heading">Tom Cruise couldn't Mission: Impossible his way in.</h1>
+              <p class="lead">
+                Welcome to our weapon detection system. Our advanced technology
+                uses a combination of AI algorithms and image processing to detect
+                weapons in real-time. Our system is designed to accurately
+                identify various types of weapons, including firearms, knives, and
+                explosives, with high accuracy and speed. With our system in
+                place, you can rest assured that your premises are safe and
+                secure. In the event that a weapon is detected, our system will
+                immediately notify the appropriate authorities, allowing them to
+                take swift action and prevent potential harm.
+              </p>
+              <button id="btn">View Live Feed</button>            
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>

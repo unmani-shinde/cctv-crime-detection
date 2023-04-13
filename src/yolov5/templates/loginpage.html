@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+          }
+body {
+    background-image:url("https://img.freepik.com/free-vector/cyber-security-concept_23-2148534852.jpg?w=996&t=st=1681347100~exp=1681347700~hmac=07b06c148f24f625796e1af602e7f37fed4060a2cf0781023215559848d46d1b");
+    background-size:cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: #333;
+    background-position: 0px -100px;
+  }
+
+h2{
+    color: black;
+    font-size:x-large;
+    padding: 15px;
+    align-items: center;
+    justify-content:center ;
+    display:flex;
+}
+
+  
+#LoginForm{
+    align-items: center;
+    justify-content:center ;
+    display:inline-block;
+    width: 25vw;
+    margin-left: 70vh;
+    margin-top: 15vh;
+    height: 315px;
+    background-color: white;
+    padding: 4rem;
+    z-index: 9999999 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+  }
+
+#Input{
+  display: flex;
+  gap: 2rem;
+  padding-left: 35px;
+}
+
+#FormInner{
+    align-items: flex-end;
+    justify-content:flex-end;
+    display:inline-block;
+    font-size: 0.8rem;
+    margin-bottom: -1vh;
+    margin-left: 30px;
+    margin-top: -10vh;
+    color: dark;
+    max-width: fit-content;
+  }
+
+label {
+    position: relative;
+    font-size: large !important;
+    color: #4E31AA;
+  }
+
+#name, #email, #password, #empId, #crimeBranch{
+    display: block;
+    width: 100%;
+    height: 4vh;
+    font-size: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 20px;
+    background-color:#4E31AA;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+
+input {
+  width: 200px;
+  font-size: large !important;
+  font-weight: 200px;
+  padding: 12px 20px;  
+  box-sizing: border-box; 
+  border: 3px solid black;
+  margin-bottom: 3vh;
+  margin-top: -1vh;
+  margin-left: -2vh;
+  /* border:none;
+  /* -webkit-transition: 0.5s; */
+  /* transition: 0.5s; */
+  /* outline: none;  */
+}
+
+input[type='text'],input[type='email'], input[type='password'], input[type='crimeBranch']:valid{
+    padding-left: 1rem;
+    font-size: large !important;
+    font-weight: bold !important;
+    width: 200px;  
+    color: #fff;
+} 
+
+input::placeholder {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-left: 1rem;
+  }
+  
+#button {
+    background-color: #3A1078;    
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+    width: 20vw;
+    height: 5vh;
+    padding-bottom: 25px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 1rem;
+    margin-left: 1vh;
+  }
+
+#button:hover {
+    background-color: rgb(115, 0, 128);
+  }
+
+    </style>
+</head>
+<body>
+    <div className="LoginForm" id="LoginForm">
+        <form method="POST" action="{{ url_for('homepage') }}">
+          <div id="FormInner">
+            <h2>Login Account</h2>
+            <div id="Input">
+              <div className="form-group">
+                <label htmlFor="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  
+                />
+              </div>
+            </div>
+            <div id="Input">
+              <div className="form-group">
+                <label htmlFor="empId">Staff ID:</label>
+                <input
+                  type="empId"
+                  name="empId"
+                  id="empId"
+                  
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="crimeBranch">Crime Branch:</label>
+                <input
+                  type="crimeBranch"
+                  name="crimeBranch"
+                  id="crimeBranch"
+                  
+                />
+              </div>
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                
+              />
+            </div>
+  
+            <div>
+              <button
+                type="submit"
+                id="button"
+              >LOGIN</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+</body>
+</html>
